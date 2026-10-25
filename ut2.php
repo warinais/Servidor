@@ -12,7 +12,7 @@ $esMasDocena = $cantidad > 12; //Operador de comparacion
 
 if ($cantidad > 0) { //Operador logico
     if($cantidad > 10) { 
-        $precioFinal = $precio * $cantidad * (1 - $descuento); //Descuento del 10% Operador Aritmetico
+        $precioFinal = $precio * $cantidad * (1 - $descuento); //Operador aritmético
         echo "El precio final de $cantidad $nombre es: " . $precioFinal . "€" . " aplicando descuento";
 
     }else{
