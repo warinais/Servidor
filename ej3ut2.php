@@ -49,4 +49,14 @@ echo "<br>";
 for ($i = 0; $i < $num; $i++) {
     echo "El número es: $i";
 }
+
+echo "<br>";
+echo "<br>";
+
+// Foreach
+
+$productos = ['Leche', 'Huevos', 'Pan', 'Fruta', 'Verduras'];
+foreach ($productos as $producto) {
+    echo "Producto: $producto <br>";
+}
 ?>
