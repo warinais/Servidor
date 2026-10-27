@@ -17,3 +17,4 @@ if ($fruta == true) {
 } else {
     echo "No hay fruta alguna.";
 }
+?>
