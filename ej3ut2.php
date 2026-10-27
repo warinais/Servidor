@@ -21,5 +21,32 @@ if ($fruta == true) {
     echo "No hay fruta alguna.";
 }
 
+echo "<br>";
+echo "<br>";
 
+// While
+
+$num = 0;
+while ($num < 5) {
+    echo "El número es: $num";
+    $num++;
+}
+echo "<br>";
+echo "<br>";
+
+//Do While
+$num = 0;
+do {
+    echo "El número es: $num";
+    $num++;
+} while ($num < 5);
+
+echo "<br>";
+echo "<br>";
+
+//For
+
+for ($i = 0; $i < $num; $i++) {
+    echo "El número es: $i";
+}
 ?>
