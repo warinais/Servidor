@@ -28,4 +28,24 @@ function triplicaValor(&$numTriplica) {
 triplicaValor($numero);
 
 echo "El valor del número después de llamar a la función por referencia es: " . $numero . "<br>";
+
+
+//try - catch, error_log
+
+function divide($a, $b) {
+    if ($b == 0) {
+        throw new Exception("El divisor no puede ser cero.");
+    }
+    return $a / $b;
+}
+
+try{
+    echo divide(8, 0);
+}catch(Exception $e){
+    error_log("Error encontrado: " . $e->getMessage());
+    echo "Ha saltado un error.";
+}
+
+echo "<br> Este programa continúa ejecutándose";
+
 ?>
