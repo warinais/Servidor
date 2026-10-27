@@ -1,4 +1,7 @@
 <?php
+
+// Ejemplo de if y switch
+
 $fruta = "Manzana";
 if ($fruta == true) {
     switch ($fruta) {
@@ -17,4 +20,6 @@ if ($fruta == true) {
 } else {
     echo "No hay fruta alguna.";
 }
+
+
 ?>
