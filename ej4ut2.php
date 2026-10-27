@@ -1,5 +1,7 @@
 <?php
 
+// Paso de parámetros por valor
+
 function duplicaValor($numDuplica) {
     $numDuplica = $numDuplica * 2;
     echo "El valor del numero duplicado es: " . $numDuplica . "<br>";
