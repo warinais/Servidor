@@ -9,7 +9,7 @@
     <h1>Lista de productos</h1>
     <ul>
         <?php foreach ($productos as $producto): ?>
-            <li><?= htmlspecialchars($producto) ?></li>
+            <li><?=htmlspecialchars($producto)?></li>
         <?php endforeach; ?>
     </ul>
 </body>
