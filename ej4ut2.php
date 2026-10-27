@@ -43,7 +43,8 @@ try{
     echo divide(8, 0);
 }catch(Exception $e){
     error_log("Error encontrado: " . $e->getMessage());
-    echo "Ha saltado un error.";
+    echo "Ha saltado un error: ";
+    echo $e->getMessage();
 }
 
 echo "<br> Este programa continúa ejecutándose";
