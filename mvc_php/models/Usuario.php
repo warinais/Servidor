@@ -21,14 +21,4 @@ class Usuario {
         return $this->usuarios;
     }
 
-    //Obtener usuario por ID
-    public function obtenerUsuarioPorId($id) {
-        foreach ($this->usuarios as $usuario) {
-            if ($usuario['id'] == $id) {
-                return $usuario;
-            }
-        }
-        return null; // Retorna null si no se encuentra el usuario
-    }
-
 }
