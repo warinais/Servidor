@@ -15,7 +15,9 @@ class UsuarioControlador {
     // Método para obtener todos los usuarios
     public function obtenerUsuarios() {
         $usuarios = $this->usuarioModelo->obtenerUsuarios();
-        return $usuarios;
-    }
+
+        //Cargar la vista
+        require __DIR__ . '/../views/usuarios.php';
+        }
 
 }
