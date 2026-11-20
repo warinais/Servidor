@@ -16,6 +16,9 @@ class UsuarioControlador {
     public function obtenerUsuarios() {
         $usuarios = $this->usuarioModelo->obtenerUsuarios();
 
+        //Comprobamos los datos
+        var_dump($usuarios);
+
         //Cargar la vista
         require __DIR__ . '/../views/usuarios.php';
         }

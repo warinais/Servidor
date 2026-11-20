@@ -15,9 +15,9 @@
         </tr>
         <?php foreach ($usuarios as $usuario): ?>
         <tr>
-            <td><htmlspecialchars($usuario['ID']) ?></td>
-            <td><htmlspecialchars($usuario['nombre']) ?></td>
-            <td><htmlspecialchars($usuario['telf']) ?></td>
+            <td><?= htmlspecialchars($usuario['ID']) ?></td>
+            <td><?= htmlspecialchars($usuario['nombre']) ?></td>
+            <td><?= htmlspecialchars($usuario['telf']) ?></td>
         </tr>
         <?php endforeach; ?>
     </table>
