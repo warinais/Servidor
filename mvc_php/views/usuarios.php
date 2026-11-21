@@ -9,13 +9,13 @@
     <h1>Lista de Usuarios</h1>
     <table border="1" cellpadding="10">
         <tr>
-            <th>ID</th>
+            <th>id</th>
             <th>Nombre</th>
             <th>Teléfono</th>
         </tr>
         <?php foreach ($usuarios as $usuario): ?>
         <tr>
-            <td><?= htmlspecialchars($usuario['ID']) ?></td>
+            <td><?= htmlspecialchars($usuario['id']) ?></td>
             <td><?= htmlspecialchars($usuario['nombre']) ?></td>
             <td><?= htmlspecialchars($usuario['telf']) ?></td>
         </tr>
