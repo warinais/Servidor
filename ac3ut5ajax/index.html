@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manejo de eventos server-driven con Ajax</title>
+</head>
+<body>
+
+    <h2>Envío de datos con Ajax</h2>
+	<form id="formulario" method="POST" action="/procesar">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="respuesta"></div>
+
+    <script>
+        document.getElementById('formulario').addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita el envío del formulario por defecto
+
+            const formData = new FormData(this);
+            
+            // Realiza la solicitud Ajax
+            fetch('procesar.php', {
+                method: 'POST',
+                body:formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('respuesta').innerText = data;
+            })
+            .catch(error => {
+                document.getElementById('respuesta').innerText = 'Ocurrió un error al procesar la solicitud.';
+            });
+        });
+    </script>
+</body>
+</html>
