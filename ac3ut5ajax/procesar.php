@@ -2,11 +2,11 @@ php
 
 <?php
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
-    $nombre = trim($_POST['nombre']);
-    if($nombre === ''){
-        echo "<p style='color: red;'>El nombre es obligatorio.</p>";
+    $telefono = trim($_POST['telefono']);
+    if($telefono === ''){
+        echo "<p style='color: red;'>El número es obligatorio.</p>";
     } else {
-        echo "<p style='color: green;'>Hola, " . htmlspecialchars($nombre) . "!</p>";
+        echo "<p style='color: green;'>Hola, el número de teléfono introducido es: " . htmlspecialchars($telefono) . "!</p>";
     }
 }
 ?>
